@@ -27,7 +27,7 @@ class Listing {
         $listings = self::all();
 
         foreach ($listings as $listing) {
-            if($listing['id'] == $id) {
+            if ($listing['id'] == $id) {
                 return $listing;
             }
         }
