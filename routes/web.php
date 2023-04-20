@@ -13,11 +13,6 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
  */
-// All Listings
-Route::get('/', [ListingController::class, 'index']);
-
-// Single Listing
-Route::get('/listings/{listing}', [ListingController::class, 'show']);
 
 /**
  * Common Resource Routes: 
@@ -29,6 +24,13 @@ Route::get('/listings/{listing}', [ListingController::class, 'show']);
  * update - Update listing
  * destroy - Destroy listing
  */
+
+// All Listings
+Route::get('/', [ListingController::class, 'index']);
+
+// Single Listing
+Route::get('/listings/{listing}', [ListingController::class, 'show']);
+
 
 // Route::get('/hello', function() {
 //     return response('<h1>Hello World</h1>', 200)
