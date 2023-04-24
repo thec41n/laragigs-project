@@ -54,6 +54,9 @@ Route::get('/register', [UserController::class, 'create']);
 // Create New Users
 Route::post('/users', [UserController::class, 'store']);
 
+// Log User Out
+Route::post('/logout', [UserController::class, 'logout']);
+
 
 // Route::get('/hello', function() {
 //     return response('<h1>Hello World</h1>', 200)
